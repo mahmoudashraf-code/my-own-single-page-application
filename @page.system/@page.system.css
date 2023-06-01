@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+app-header div {
+    box-shadow: 0 0 3px;
+    padding: 2px;
+}
+app-header nav {
+    text-align: center;
+}
+app-header ul li {
+    margin: 2px;
+    display: inline-block;
+    cursor: pointer;
+}
+app-header ul li:hover {
+    text-decoration: underline;
+}

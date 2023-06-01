@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+bash-borderLayout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+bash-borderLayout bash-borderLayout-center {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    height: 100%;
+}
+bash-gridLayout {
+    display: grid;
+}
+bash-dialog dialog {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0 0 3px;
+    border: none;
+    width: auto;
+    height: 45%;
+    left: 10%;
+    right: 10%;
+    top: 22%;
+    border-radius: 5px;
+    display: none;
+}
+bash-dialog dialog header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #18615a;
+    color: white;
+    margin: 5px;
+    padding: 2px;
+}
+bash-CenterLayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

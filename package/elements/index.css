@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+html,
+body {
+    height: 100%;
+    user-select: none;
+}
+gui-app {
+    color: var(--guiThemeDarkColor, black);
+    fill: var(--guiThemeDarkFill, black);
+    background-color: var(--guiThemeDarkBackground, white);
+}
+[gui-theme="red"] {
+    --guiThemeDarkColor: red;
+    --guiThemeDarkFill: red;
+}
+[gui-layout="border"] {
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+[gui-layout="col"] {
+    display: flex;
+    height: 100%;
+}
+[gui-data~="shadow"] {
+    box-shadow: 0 0 2px;
+}
+gui-app-header {
+    display: grid;
+    grid-gap: 11px;
+    grid-template-columns: auto 1fr;
+    padding: 7px 15px;
+}
+gui-center {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+gui-menu {
+    width: 35px;
+    transition: width 0.5s;
+    grid-gap: 5px;
+}
+gui-menu[left] {
+    border-right: 1px solid;
+}
+gui-menu[right] {
+    direction: rtl;
+    border-left: 1px solid;
+}
+gui-menu gui-menu-header {
+    box-shadow: 0 0 2px;
+    display: grid;
+    padding: 5px;
+}
+svg {
+    width: 25px;
+    height: 25px;
+}
+gui-list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-width: max-content;
+    padding: 5px;
+    grid-gap: 5px;
+    cursor: pointer;
+}
+gui-title {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+gui-title[size="m"] {
+    font-size: 1.15em;
+    margin-top: 4px;
+}
+gui-list-item:hover {
+    background-color: #e4e6e8;
+}
+gui-cards gui-card {
+    margin: 2px;
+    padding: 3px;
+    box-shadow: 0 0 2px;
+    border-radius: 2px;
+    display: block;
+}
