@@ -2,5 +2,5 @@
 run your web app using components and dynamic routing.
 ## Vidoe Demo
 
-![App Screenshot](demo.webm)
+[![Demo video](demo.webm)](demo.webm)
 
